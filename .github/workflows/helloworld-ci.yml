@@ -1,10 +1,10 @@
 name: hello world
 on:
-  paths:
-    - '!README.md'
-    - '!docs/**'
-    - '**.js'
   push:
+    paths:
+      - '!README.md'
+      - '!docs/**'
+      - '**.js'
     branches: 
       - 'main'
       - 'release/**'
