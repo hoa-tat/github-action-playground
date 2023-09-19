@@ -1,15 +1,19 @@
-name: coverage
-on: 
-    pull_request_target: 
-        branches: [main]
-    pull_request: 
-        types: [opened, reopened, synchronize]
-    workflow_dispatch: 
-
+name: 'coverage'
+on:
+    push:
+        branches:
+            - main
 jobs:
-    Coverage-report:
+    coverage:
+        permissions:
+            checks: write
+            pull-requests: write
+            contents: write
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - run: npm install
+            - uses: actions/checkout@v1
+            - uses: jwalton/gh-find-current-pr@v1
+                id: findPr
             - uses: ArtiomTr/jest-coverage-report-action@v2
+                with:
+                   prnumber: ${{ steps.findPr.outputs.number }}
