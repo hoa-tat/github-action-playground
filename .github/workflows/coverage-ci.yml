@@ -11,10 +11,6 @@ jobs:
             contents: write
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
-            - run: npm install
-            - uses: jwalton/gh-find-current-pr@v1
-              id: findPr
             - uses: actions/checkout@v2
             - run: npm install
             - uses: ArtiomTr/jest-coverage-report-action@v2
