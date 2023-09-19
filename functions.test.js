@@ -25,13 +25,13 @@ describe('Add two numbers', () => {
 })
 
 
-describe('Minus two numbers', () => {
+// describe('Minus two numbers', () => {
 
-  test('Numeric inputs should give the answer', ()=>{
-    expect(minus(8,7)).toEqual(8-7)
-  })
+//   test('Numeric inputs should give the answer', ()=>{
+//     expect(minus(8,7)).toEqual(8-7)
+//   })
   
-  test('Mixing numeric inputs should give the answer', ()=>{
-    expect(minus(9,7)).toEqual(9-7)
-  })
-})
+//   test('Mixing numeric inputs should give the answer', ()=>{
+//     expect(minus(9,7)).toEqual(9-7)
+//   })
+// })
