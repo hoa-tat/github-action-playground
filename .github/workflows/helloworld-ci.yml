@@ -20,6 +20,6 @@ jobs:
         with:
           mode: exactly
           count: 0
-          labels: "do not merge"
+          labels: "don't build"
       - run: echo "TODAY=$(date +%y-%m-%d)" >> $GITHUB_ENV
       - run: echo Hello world, today is $TODAY
