@@ -1,34 +1,35 @@
 {
     "name": "github-actions-playground",
     "version": "1.0.0",
+    "type": "module",
     "description": "Sample NodeJs project with Github Actions",
     "main": "app.js",
     "directories": {
-      "doc": "docs"
+        "doc": "docs"
     },
     "scripts": {
-      "test": "jest"
+        "test": "jest"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/hoa-tat/github-action-playground.git"
+        "type": "git",
+        "url": "git+https://github.com/hoa-tat/github-action-playground.git"
     },
     "keywords": [
-      "demo",
-      "workflows",
-      "cicd"
+        "demo",
+        "workflows",
+        "cicd"
     ],
     "author": "hoa-tat",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/hoa-tat/github-action-playground/issues"
+        "url": "https://github.com/hoa-tat/github-action-playground/issues"
     },
     "homepage": "https://github.com/hoa-tat/github-action-playground#readme",
     "devDependencies": {
-      "jest": "^27.4.7"
+        "jest": "^27.4.7"
     },
     "dependencies": {
-      "commander": "^8.3.0",
-      "randomstring": "^1.2.1"
+        "commander": "^8.3.0",
+        "randomstring": "^1.2.1"
     }
-  }
+}
